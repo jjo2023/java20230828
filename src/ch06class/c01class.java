@@ -23,5 +23,6 @@ class MyClass01{
 
 
     //instance method
+    //인스턴스가 가져야 하는 기능들
 
 }
