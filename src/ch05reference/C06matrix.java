@@ -22,6 +22,7 @@ public class C06matrix {
 		System.out.println(b[2][2]);
 		System.out.println(b[2][2]);
 		
+		//b에 새 객체의 참조 값 할당 됨
 		b = new int[][] {{33,44},{11,22}};
 		System.out.println(b[0][0]);
 		System.out.println(a[0][0]);
