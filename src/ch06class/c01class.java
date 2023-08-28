@@ -19,7 +19,9 @@ class MyClass01{
 
     int age;
 
+    String name;
 
-//instance method
+
+    //instance method
 
 }
