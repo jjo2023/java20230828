@@ -11,7 +11,7 @@ public class C10method {
 		System.out.println(a[0]);
 		method1(a);
 		
-		System.out.println("a메소드호출 후");
+		System.out.println("메소드호출 후");
 		System.out.println(a[0]);
 
 	}
