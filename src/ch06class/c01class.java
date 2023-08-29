@@ -11,6 +11,12 @@ public class c01class {
         System.out.println("o1 = " + o1.age);
         MyClass01 o2 = o1;
 
+        System.out.println("o2.age = " + o2.age);
+
+        o1.age = 60;
+
+        System.out.println("o2.age = " + o2.age);
+
     }
 }
 class MyClass01{
@@ -20,6 +26,8 @@ class MyClass01{
     int age;
 
     String name;
+
+    String address;
 
 
     //instance method
