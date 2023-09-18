@@ -6,22 +6,24 @@ public class C12polymorphism {
         dog.breath();
         dog.sniff();
 
-        Animal12 ani =dog;
+        Animal12 ani = dog;
         ani.breath();
+//        ani.sniff(); // x
 
-        Animal12 ani12 = new Malamute12();
-        ani12.breath();
+        Animal12 ani2 = new Malamute12();
+        ani2.breath();
+//        ani2.sniff(); // x
     }
-
 }
-class Animal12{
-    public void breath(){
+
+class Animal12 {
+    public void breath() {
         System.out.println("숨쉬다");
     }
 }
 
-class Malamute12 extends Animal12{
-    public void sniff(){
-        System.out.println("냄새를맡다");
+class Malamute12 extends Animal12 {
+    public void sniff() {
+        System.out.println("냄새를 맡다");
     }
 }

@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class C10set {
     public static void main(String[] args) {
-        //set : 집합
+        // set : 집합
         HashSet set = new HashSet();
         set.add(new Object());
         set.add(new Object());

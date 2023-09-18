@@ -1,26 +1,23 @@
 package ch09nested.book.sec03.exam02;
 
 public class A {
-    //정적 멤버 클래스
-    static class B{
-        //인스턴스 필드
+    static class B {
+        // 필드
         int field1 = 1;
-
-        //정적필드(Java 17부터 허용)
         static int field2 = 2;
 
-        //생성자
-        B(){
-            System.out.println("B-생성자 실행");
-        }
-        //인스턴스 메소드
-        void method1(){
-            System.out.println("B-method1 실행");
+        // 생성자
+        B() {
+            System.out.println("B.B");
         }
 
-        //정적 메소드(Java 17부터 허용)
-        static void method2(){
-            System.out.println("B-method2 실행");
+        // 메소드
+        void method1() {
+            System.out.println("B.method1");
+        }
+
+        static void method2() {
+            System.out.println("B.method2");
         }
     }
 }

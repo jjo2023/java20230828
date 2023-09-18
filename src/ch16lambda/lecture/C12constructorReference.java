@@ -4,7 +4,6 @@ import java.util.stream.IntStream;
 
 public class C12constructorReference {
     public static void main(String[] args) {
-
         System.out.println("for문 사용");
         for (int i = 1; i < 10; i++) {
             Student s = new Student(i);

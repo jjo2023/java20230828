@@ -1,5 +1,7 @@
 package ch12api.book.sec03.exam02;
 
+import java.util.Objects;
+
 public class Student {
     private int no;
     private String name;
@@ -18,19 +20,20 @@ public class Student {
     }
 
     @Override
-    public int hashCode() {
-        int hashCode = no+name.hashCode();
-        return hashCode;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Student student = (Student) o;
+
+        if (no != student.no) return false;
+        return Objects.equals(name, student.name);
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if(obj instanceof Student target){
-            if(no==target.getNo()&& name.equals(target.getName())){
-                return true;
-            }
-        }
-        return false;
+    public int hashCode() {
+        int result = no;
+        result = 31 * result + (name != null ? name.hashCode() : 0);
+        return result;
     }
 }
-

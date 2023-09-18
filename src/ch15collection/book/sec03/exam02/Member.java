@@ -3,11 +3,8 @@ package ch15collection.book.sec03.exam02;
 import java.util.Objects;
 
 public class Member {
-    public String name;
-    public int age;
-
-    // 생성자자나 이 멍충아ㅏㅏㅏㅏㅏ
-
+    private String name;
+    private int age;
 
     public Member(String name, int age) {
         this.name = name;
@@ -32,4 +29,3 @@ public class Member {
         return result;
     }
 }
-

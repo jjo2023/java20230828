@@ -2,23 +2,23 @@ package ch12api.lecture;
 
 public class C12string {
     public static void main(String[] args) {
-        // length :  길이
+        // length : 길이
         String a = "java";
-        String d = "spring";
+        String b = "spring";
         String c = "hello world";
-        String b = "hi java  ";
+        String d = "hi java  ";
 
-        System.out.println(a.length());
-        System.out.println(d.length());
-        System.out.println(c.length());
-        System.out.println(b.length());
+        System.out.println(a.length()); // 4
+        System.out.println(b.length()); // 6
+        System.out.println(c.length()); // 11
+        System.out.println(d.length()); // 9
 
         // text block
         // 가장 왼쪽 들여쓰기 기준
         String e = """
                 hello world
                  hi java
-                 greeting spring                
+                 greeting spring
                 """;
         System.out.println(e.length());
 

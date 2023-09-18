@@ -1,9 +1,10 @@
 package ch09nested.lecture;
 
-public class C08interface {
+import ch07extends.book.exercise.p12.C;
 
+public class C08interface {
     public static void main(String[] args) {
-        class ConcreteClass implements MyClass08.NestedInterface{
+        class ConcreteClass implements MyClass08.NestedInterface {
             @Override
             public void method2() {
                 System.out.println("ConcreteClass.method2");
@@ -14,32 +15,35 @@ public class C08interface {
     }
 }
 
-class MyClass081 implements MyClass08.NestedInterface{
+class MyClass081 implements MyClass08.NestedInterface {
     @Override
     public void method2() {
         System.out.println("MyClass081.method2");
     }
 }
-class MyClass08{
-    interface NestedInterface{
-        //public fical static field
-        //public abstract instance method(**********중요!)
 
+class MyClass08 {
+    interface NestedInterface {
+        // public final static field
+        // public abstract instance method (***********)
         void method2();
-        //private instance method
-        //default instance method
-        //public static method
-        //private static method
+        // private instance method
+        // default instance method
+        // public static method
+        // private static method
     }
 
-    void method1(){
-        class ConcreteClass implements NestedInterface{
-            public void method2(){
+    void method1() {
+        class ConcreteClass implements NestedInterface {
+
+            @Override
+            public void method2() {
                 System.out.println("ConcreteClass.method2");
             }
         }
+
         ConcreteClass c = new ConcreteClass();
         c.method2();
+
     }
 }
-

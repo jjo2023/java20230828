@@ -1,6 +1,6 @@
 package ch08interface.book.exercise.p07;
 
-public class MySqlDao implements DataAccessObject{
+public class MySqlDao implements DataAccessObject {
     @Override
     public void select() {
         System.out.println("MySql DB에서 검색");

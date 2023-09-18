@@ -1,7 +1,8 @@
 package ch07extends.book.exercise.p12;
 
-public class B extends A{
-    public void method1(){
-        System.out.println("B-method1");
+public class B extends A {
+    @Override
+    public void method1() {
+        System.out.println("B.method1");
     }
 }

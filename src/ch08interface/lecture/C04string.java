@@ -8,12 +8,13 @@ public class C04string {
     public static void main(String[] args) {
         String a = "java";
 
-        Object o =a;
+        Object o = a;
         Serializable s = a;
         CharSequence c = a;
         Comparable<String> cp = a;
         Constable co = a;
         ConstantDesc cd = a;
-        
+
+
     }
 }

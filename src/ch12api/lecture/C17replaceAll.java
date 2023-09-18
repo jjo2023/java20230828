@@ -7,9 +7,7 @@ public class C17replaceAll {
         String r = a.replace("java", "python");
         System.out.println(r);
 
-        String r2 = a.replaceAll("(java|JAVA)","python");
+        String r2 = a.replaceAll("(java|JAVA)", "python");
         System.out.println(r2);
-
-
     }
 }

@@ -4,11 +4,14 @@ public class ConstructorReferenceExample {
     public static void main(String[] args) {
         Person person = new Person();
 
-        Member m1 = person.getMember1(Member::new);
-        System.out.println(m1);
+//        person.getMember1(s -> new Member(s));
+        Member member1 = person.getMember1(Member::new);
+        System.out.println(member1);
         System.out.println();
 
-        Member m2 = person.getMember2(Member::new);
-        System.out.println(m2);
+//        person.getMember2((a, b) -> new Member(a, b));
+        Member member2 = person.getMember2(Member::new);
+        System.out.println(member2);
+
     }
 }

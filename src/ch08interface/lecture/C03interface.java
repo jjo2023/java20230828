@@ -14,23 +14,23 @@ public class C03interface {
         System.out.println(System.identityHashCode(i2));
 
         i1.method1();
-        //i1.method2();
+//        i1.method2();
 
-        //i2.method1();
+//        i2.method1();
         i2.method2();
     }
 }
 
-interface MyInterface031{
+interface MyInterface031 {
     void method1();
 }
 
-interface MyInterface032{
+interface MyInterface032 {
     void method2();
 }
 
-//여러 인터페이스를 구현할 수 있다.
-class MyClass03 implements MyInterface031,MyInterface032{
+// 여러 인터페이스를 구현할 수 있다.
+class MyClass03 implements MyInterface031, MyInterface032 {
     @Override
     public void method1() {
         System.out.println("MyClass03.method1");
@@ -41,3 +41,4 @@ class MyClass03 implements MyInterface031,MyInterface032{
         System.out.println("MyClass03.method2");
     }
 }
+

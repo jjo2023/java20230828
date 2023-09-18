@@ -1,11 +1,14 @@
 package ch09nested.lecture;
 
-public class C05access {
+import ch07extends.book.exercise.p12.C;
 
-    String name= "java";
-    class InnerClass{
-        String name = "Spring";
-        void method(){
+public class C05access {
+    String name = "java";
+
+    class InnerClass {
+        String name = "spring";
+
+        void method() {
             System.out.println(name);
             System.out.println(this.name);
             System.out.println(C05access.this.name);

@@ -13,7 +13,7 @@ public class C08set {
 
         set.forEach(System.out::println);
 
-        System.out.println("시간이 흐른 후...");
+        System.out.println("시간이 흐른 후");
         set.forEach(System.out::println);
     }
 }

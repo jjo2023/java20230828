@@ -6,13 +6,13 @@ import static java.lang.Math.*;
 
 public class C03importStatic {
     public static void main(String[] args) {
-        //중첩클래스와 상관 없음.. 다른 길로 잠시..
+        // 중첩클래스와 관련없이
+        // 잠깐 다른 길로 빠짐...
+
         double random = random();
         double random1 = random();
         double random2 = random();
 
-        double length = PI*3*2;
-
-
+        double length = PI * 3 * 2;
     }
 }

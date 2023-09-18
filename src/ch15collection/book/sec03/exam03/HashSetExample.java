@@ -6,34 +6,33 @@ import java.util.Set;
 
 public class HashSetExample {
     public static void main(String[] args) {
-        // HashSet 컬렉션 생성
         Set<String> set = new HashSet<>();
 
-        //객체 추가
-        set.add("Java");
-        set.add("JDBC");
-        set.add("JSP");
-        set.add("Spring");
+        set.add("java");
+        set.add("jdbc");
+        set.add("jsp");
+        set.add("spring");
 
-        // 객체를 하나씩 가져와서 처리
         Iterator<String> iterator = set.iterator();
-        while (iterator.hasNext()){
-            // 객체를 하나 가져오기
-            String element = iterator.next();
-            System.out.println( element);
-            if (element.equals("JSP")){
-                // 가져온 객체를 컬렉션에서 제거
-                iterator.remove();
-            }
-        }
-        System.out.println();
 
-        // 객체 제거
-        set.remove("JDBC");
+//        String next = iterator.next();
+//        System.out.println("next = " + next);
+//        String next1 = iterator.next();
+//        System.out.println("next1 = " + next1);
+//        String next2 = iterator.next();
+//        System.out.println("next2 = " + next2);
+//        String next3 = iterator.next();
+//        System.out.println("next3 = " + next3);
 
-        // 객체를 하나씩 가져와서 처리
-        for (String element : set){
-            System.out.println(element);
+        while (iterator.hasNext()) {
+            String next = iterator.next();
+            System.out.println("next = " + next);
         }
+
+        for (String elem : set) {
+            System.out.println("elem = " + elem);
+        }
+
+
     }
 }

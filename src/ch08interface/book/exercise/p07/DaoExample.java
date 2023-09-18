@@ -1,7 +1,7 @@
 package ch08interface.book.exercise.p07;
 
 public class DaoExample {
-    public static void dbWork(DataAccessObject dao){
+    public static void dbWork(DataAccessObject dao) {
         dao.select();
         dao.insert();
         dao.update();
@@ -12,4 +12,6 @@ public class DaoExample {
         dbWork(new OracleDao());
         dbWork(new MySqlDao());
     }
+
+
 }

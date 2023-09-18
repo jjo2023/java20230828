@@ -21,7 +21,8 @@ public class C03contains {
         System.out.println("c2 = " + c2); // false? true?
     }
 }
-class MyClass03{
+
+class MyClass03 {
     private String name;
 
     public MyClass03(String name) {

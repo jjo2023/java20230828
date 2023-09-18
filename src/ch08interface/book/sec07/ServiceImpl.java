@@ -1,4 +1,5 @@
 package ch08interface.book.sec07;
 
-public class ServiceImpl implements Service{
+public class ServiceImpl implements Service {
+
 }

@@ -20,8 +20,8 @@ public class C06nestedList {
         list.add(row2);
 
         System.out.println("list.get(0).get(0) = " + list.get(0).get(0));
-        System.out.println("list.get(0).get(0) = " + list.get(0).get(1));
-        System.out.println("list.get(0).get(0) = " + list.get(0).get(2));
+        System.out.println("list.get(0).get(1) = " + list.get(0).get(1));
+        System.out.println("list.get(0).get(2) = " + list.get(0).get(2));
 
         System.out.println("list.get(1).get(0) = " + list.get(1).get(0));
         System.out.println("list.get(1).get(1) = " + list.get(1).get(1));
@@ -33,9 +33,8 @@ public class C06nestedList {
         System.out.println("list.get(2).get(2) = " + list.get(2).get(2));
 
         // 값 교체
-        list.get(0).set(0,99);
+        list.get(0).set(0, 99);
         System.out.println("list.get(0).get(0) = " + list.get(0).get(0));
         System.out.println("list.get(2).get(0) = " + list.get(2).get(0)); // 9->99
-
     }
 }

@@ -38,7 +38,7 @@ public class C02list {
         System.out.println(list.get(0));
         System.out.println(list.get(3));
 
-        // 있는지 확인
+        // 있는 지 확인
         boolean contains = list.contains("java");
         boolean contains1 = list.contains("react");
         System.out.println("contains = " + contains);
@@ -46,17 +46,17 @@ public class C02list {
 
         // 전체 원소 탐색 (for)
         System.out.println("for문 사용 전체 탐색");
-        for (int i =0; i<list.size(); i++){
+        for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
         }
-        System.out.println("향상문 for문 사용 전체 탐색");
-        for(String item : list){
+
+        System.out.println("향상된 for문 사용 전체 탐색");
+        for (String item : list) {
             System.out.println(item);
         }
 
         System.out.println("foreach 메소드로 전체 탐색");
-        list.forEach(e-> System.out.println(e));
+//        list.forEach(e -> System.out.println(e));
         list.forEach(System.out::println);
-
     }
 }

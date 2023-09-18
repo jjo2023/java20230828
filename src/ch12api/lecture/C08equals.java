@@ -4,21 +4,21 @@ import java.util.Objects;
 
 public class C08equals {
     public static void main(String[] args) {
-        MyClass08 o1 = new MyClass08("이강인",20);
-        MyClass08 o2 = new MyClass08("이강인",30);
-        MyClass08 o3 = new MyClass08("이강인",30);
+        MyClass08 o1 = new MyClass08("이강인", 20);
+        MyClass08 o2 = new MyClass08("이강인", 30);
+        MyClass08 o3 = new MyClass08("이강인", 30);
 
-        System.out.println(o1==o2); //false
-        System.out.println(o1.equals(o2)); //false
+        System.out.println(o1 == o2); // false
+        System.out.println(o1.equals(o2)); // false
 
-        System.out.println(o2==o3); //false
-        System.out.println(o2.equals(o3)); //true
+        System.out.println(o2 == o3); // false
+        System.out.println(o2.equals(o3)); // true
     }
 }
-class MyClass08{
-    private String name;
 
-    private  int age;
+class MyClass08 {
+    private String name;
+    private int age;
 
     public MyClass08(String name, int age) {
         this.name = name;

@@ -1,6 +1,6 @@
 package ch08interface.book.exercise.p07;
 
-public class OracleDao implements DataAccessObject{
+public class OracleDao implements DataAccessObject {
     @Override
     public void select() {
         System.out.println("Oracle DB에서 검색");

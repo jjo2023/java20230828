@@ -3,16 +3,19 @@ package ch12api.lecture;
 public class C04getterSetter {
     public static void main(String[] args) {
         MyClass04 o1 = new MyClass04();
-
+//        o1.name = "손흥민";
+//        o1.age = 33;
         o1.setName("손흥민");
         o1.setAge(33);
 
         System.out.println(o1);
+
         System.out.println(o1.getName());
+
     }
 }
 
-class MyClass04{
+class MyClass04 {
     private String name;
     private int age;
 
@@ -31,6 +34,7 @@ class MyClass04{
     public void setAge(int age) {
         this.age = age;
     }
+
 
     @Override
     public String toString() {

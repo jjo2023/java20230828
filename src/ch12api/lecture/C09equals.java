@@ -6,13 +6,11 @@ public class C09equals {
         Object o2 = new String("spring");
         Object o3 = new String("java");
 
-        System.out.println(o1==o2); //false
-        System.out.println(o1==o3); //false
+        System.out.println(o1 == o2); // false
+        System.out.println(o1 == o3); // false
 
-        System.out.println(o1.equals(o2)); //false
-        System.out.println(o1.equals(o3)); //true
-        //String 비교시 반드시 equals!!!*******
+        System.out.println(o1.equals(o2)); // false
+        System.out.println(o1.equals(o3)); // true
+
     }
-
-
 }

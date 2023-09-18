@@ -13,6 +13,5 @@ public class C06string {
         System.out.println(b.length());
 
         System.out.println(String.valueOf(30));
-
     }
 }

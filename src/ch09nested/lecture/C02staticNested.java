@@ -7,11 +7,13 @@ public class C02staticNested {
     }
 }
 
-class MyClass02{
-    static class NestedClass02{
-
+class MyClass02 {
+    static class NestedClass02 {
+        // 필드,생성자,메소드
     }
-    void  method1(){
+
+    void method1() {
         NestedClass02 o2 = new NestedClass02();
+
     }
 }

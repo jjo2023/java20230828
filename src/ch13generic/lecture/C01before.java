@@ -21,16 +21,19 @@ public class C01before {
 
         Long g4 = (Long) f2;
 
-        System.out.println("프로그램 진행...");
+        System.out.println("프로그램 진행....");
+
     }
 }
 
-class MyClass01{
+class MyClass01 {
     private Object a;
-    public void setA(Object a){
+
+    public void setA(Object a) {
         this.a = a;
     }
-    public Object getA(){
+
+    public Object getA() {
         return a;
     }
 }

@@ -12,29 +12,32 @@ public class C19polymorphism {
 
         System.out.println("게임 종료...");
     }
-
 }
 
-class Hero19{
+class Hero19 {
     public Weapon weapon;
 
-    public void attack(){
+    public void attack() {
         weapon.shot();
     }
 }
-class Weapon{
-    public void shot(){
-        System.out.println("무기를 사용합니다");
-    }
-}
-class Gun extends Weapon{
-    public void shot(){
-        System.out.println("총을 쏩니다");
+
+class Weapon {
+    public void shot() {
+        System.out.println("무기를 사용합니다.");
     }
 }
 
-class Sword extends Weapon{
-    public void shot(){
-        System.out.println("검을 휘두릅니다");
+class Gun extends Weapon {
+    @Override
+    public void shot() {
+        System.out.println("총을 쏩니다.");
+    }
+}
+
+class Sword extends Weapon {
+    @Override
+    public void shot() {
+        System.out.println("검을 휘두릅니다.");
     }
 }
